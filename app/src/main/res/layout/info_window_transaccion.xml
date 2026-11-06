@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="240dp"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvInfoConcepto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/texto_primario"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Almuerzo" />
+
+    <TextView
+        android:id="@+id/tvInfoMonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="$150.00"
+        tools:textColor="@color/gasto" />
+
+    <TextView
+        android:id="@+id/tvInfoDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/texto_secundario"
+        android:textSize="12sp"
+        tools:text="Cra 7 #45-10, Bogotá" />
+</LinearLayout>

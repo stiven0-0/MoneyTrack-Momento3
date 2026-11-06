@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema claro con la paleta de MoneyTrack -->
+    <style name="Base.Theme.MoneyTrack" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primary_contenedor</item>
+        <item name="colorOnPrimaryContainer">@color/primary_dark</item>
+        <item name="colorSecondary">@color/primary_claro</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/texto_primario</item>
+        <item name="colorOnSurfaceVariant">@color/texto_secundario</item>
+        <item name="colorOutline">@color/borde_campo</item>
+        <item name="colorError">@color/gasto</item>
+        <item name="android:colorBackground">@color/fondo</item>
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="textInputStyle">@style/Widget.MoneyTrack.TextInputLayout</item>
+        <item name="materialButtonStyle">@style/Widget.MoneyTrack.Button</item>
+    </style>
+
+    <style name="Theme.MoneyTrack" parent="Base.Theme.MoneyTrack" />
+
+    <!-- Campos de texto con esquinas redondeadas -->
+    <style name="Widget.MoneyTrack.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">14dp</item>
+        <item name="boxCornerRadiusTopEnd">14dp</item>
+        <item name="boxCornerRadiusBottomStart">14dp</item>
+        <item name="boxCornerRadiusBottomEnd">14dp</item>
+    </style>
+
+    <!-- Botones más altos y con esquinas suaves -->
+    <style name="Widget.MoneyTrack.Button" parent="Widget.Material3.Button">
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">14dp</item>
+    </style>
+
+    <style name="Widget.MoneyTrack.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="cornerRadius">14dp</item>
+    </style>
+    <style name="Theme.MiPortada" parent="Theme.SplashScreen">
+        <!-- El fondo que tendrá la pantalla de portada -->
+        <item name="windowSplashScreenBackground">@android:color/white</item>
+        <!-- Tu imagen que se mostrará en el centro -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/portada</item>
+        <!-- El tema que se usará después de que la portada desaparezca -->
+        <item name="postSplashScreenTheme">@style/Theme.MaterialComponents.DayNight.NoActionBar</item>
+    </style>
+</resources>
+

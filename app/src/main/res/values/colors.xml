@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Marca -->
+    <color name="primary">#1E40AF</color>
+    <color name="primary_dark">#1E3A8A</color>
+    <color name="primary_claro">#3B82F6</color>
+    <color name="primary_contenedor">#DBE6FF</color>
+
+    <!-- Superficies -->
+    <color name="fondo">#F4F6FB</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="contorno">#E2E8F0</color>
+    <color name="borde_campo">#94A3B8</color>
+    <color name="chip_fondo">#EEF2F7</color>
+    <color name="fondo_imagen">#E8EEF7</color>
+
+    <!-- Ingresos / gastos -->
+    <color name="ingreso">#047857</color>
+    <color name="gasto">#E11D48</color>
+    <color name="ingreso_claro">#86EFAC</color>
+    <color name="gasto_claro">#FDA4AF</color>
+
+    <!-- Texto -->
+    <color name="texto_primario">#0F172A</color>
+    <color name="texto_secundario">#64748B</color>
+
+    <!-- Sobre la tarjeta azul del balance -->
+    <color name="blanco_suave">#CCFFFFFF</color>
+    <color name="blanco_translucido">#26FFFFFF</color>
+</resources>

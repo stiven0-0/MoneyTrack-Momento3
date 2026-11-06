@@ -1,0 +1,19 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+*.apk
+*.ap_
+*.aab
+
+# NOTA: app/google-services.json SÍ se sube al repositorio a propósito: sin él el proyecto
+# no compila. Esa clave es de cliente (no es secreta); los datos se protegen con las
+# Security Rules de Firestore/Storage (ver README). NUNCA subas MAPS_API_KEY: vive en
+# local.properties, que sí está ignorado.

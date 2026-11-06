@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- La app usa una sola paleta clara (también con el modo oscuro del sistema),
+         para que los colores se vean igual en todos los celulares. -->
+    <style name="Base.Theme.MoneyTrack" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primary_contenedor</item>
+        <item name="colorOnPrimaryContainer">@color/primary_dark</item>
+        <item name="colorSecondary">@color/primary_claro</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/texto_primario</item>
+        <item name="colorOnSurfaceVariant">@color/texto_secundario</item>
+        <item name="colorOutline">@color/borde_campo</item>
+        <item name="colorError">@color/gasto</item>
+        <item name="android:colorBackground">@color/fondo</item>
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="textInputStyle">@style/Widget.MoneyTrack.TextInputLayout</item>
+        <item name="materialButtonStyle">@style/Widget.MoneyTrack.Button</item>
+    </style>
+</resources>

@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Mis Finanzas</string>
+    <string name="titulo_principal">Mis Finanzas</string>
+    <string name="titulo_nueva">Nueva transacción</string>
+    <string name="titulo_editar">Editar transacción</string>
+    <string name="resumen_financiero">Balance disponible</string>
+    <string name="total_ingresos">Ingresos</string>
+    <string name="total_gastos">Gastos</string>
+    <string name="historial_transacciones">Historial de transacciones</string>
+    <string name="lista_vacia">No hay transacciones registradas.\nPulsa + para agregar una.</string>
+    <string name="agregar_transaccion">Agregar transacción</string>
+    <string name="hint_concepto">Concepto (ej. Almuerzo, Pago de internet)</string>
+    <string name="hint_monto">Monto</string>
+    <string name="label_tipo">Tipo de transacción</string>
+    <string name="tipo_gasto">Gasto</string>
+    <string name="tipo_ingreso">Ingreso</string>
+    <string name="guardar">Guardar</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="eliminar_titulo">Eliminar transacción</string>
+    <string name="eliminar_mensaje">¿Deseas eliminar \"%1$s\"?</string>
+    <string name="mensaje_guardado">Transacción guardada</string>
+    <string name="mensaje_actualizado">Transacción actualizada</string>
+    <string name="mensaje_eliminado">Transacción eliminada</string>
+    <string name="error_concepto_vacio">Ingresa un concepto</string>
+    <string name="error_concepto_corto">El concepto debe tener al menos 3 caracteres</string>
+    <string name="error_monto_vacio">Ingresa un monto</string>
+    <string name="error_monto_invalido">Ingresa un monto válido mayor a 0</string>
+    <string name="error_transaccion_no_encontrada">Transacción no encontrada</string>
+    <string name="error_cargar_transacciones">No se pudieron cargar las transacciones: %1$s</string>
+    <string name="error_guardar">No se pudo guardar: %1$s</string>
+    <string name="error_eliminar">No se pudo eliminar: %1$s</string>
+
+    <!-- ===== Autenticación ===== -->
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="hint_confirmar_contrasena">Confirmar contraseña</string>
+    <string name="no_tienes_cuenta">¿No tienes cuenta? Regístrate</string>
+    <string name="ya_tienes_cuenta">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="titulo_registro">Crear cuenta</string>
+    <string name="error_email_vacio">Ingresa tu correo</string>
+    <string name="error_email_invalido">Ingresa un correo válido</string>
+    <string name="error_password_vacio">Ingresa tu contraseña</string>
+    <string name="error_password_corto">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="error_password_no_coincide">Las contraseñas no coinciden</string>
+    <string name="error_credenciales">Correo o contraseña incorrectos</string>
+    <string name="error_usuario_inexistente">No existe una cuenta con ese correo o está deshabilitada</string>
+    <string name="error_email_en_uso">Ese correo ya está registrado</string>
+    <string name="error_password_debil">La contraseña es demasiado débil</string>
+    <string name="error_red">Sin conexión. Revisa tu internet e inténtalo de nuevo</string>
+    <string name="error_auth_generico">No se pudo completar la operación: %1$s</string>
+    <string name="error_verificar_rol">No se pudo verificar tu rol. Se aplicarán permisos estándar</string>
+    <string name="mensaje_registro_exitoso">Cuenta creada correctamente</string>
+    <string name="menu_mapa">Mapa</string>
+    <string name="menu_cerrar_sesion">Cerrar sesión</string>
+    <string name="subtitulo_sesion">%2$s · %1$s</string>
+    <string name="rol_admin_label">Administrador</string>
+    <string name="rol_estandar_label">Estándar</string>
+    <string name="sin_permiso_editar">Solo un administrador puede editar transacciones</string>
+
+    <!-- ===== Multimedia ===== -->
+    <string name="label_imagen">Comprobante (opcional)</string>
+    <string name="btn_galeria">Galería</string>
+    <string name="btn_camara">Cámara</string>
+    <string name="desc_imagen">Imagen de la transacción</string>
+    <string name="subiendo_imagen">Subiendo imagen… %1$d%%</string>
+    <string name="error_subir_imagen">No se pudo subir la imagen: %1$s</string>
+    <string name="error_procesar_imagen">No se pudo procesar la imagen seleccionada</string>
+    <string name="error_crear_archivo">No se pudo preparar la cámara</string>
+    <string name="permiso_camara_denegado">Se necesita el permiso de cámara para tomar la foto</string>
+
+    <!-- ===== Ubicación y mapa ===== -->
+    <string name="label_ubicacion">Ubicación</string>
+    <string name="btn_actualizar_ubicacion">Actualizar ubicación</string>
+    <string name="ubicacion_obteniendo">Obteniendo ubicación…</string>
+    <string name="ubicacion_no_disponible">Ubicación no disponible</string>
+    <string name="permiso_ubicacion_denegado">Permiso de ubicación denegado. La transacción se guardará sin ubicación</string>
+    <string name="titulo_mapa">Mapa de transacciones</string>
+    <string name="mapa_normal">Normal</string>
+    <string name="mapa_satelite">Satélite</string>
+    <string name="mapa_sin_marcadores">Aún no hay transacciones con ubicación</string>
+    <string name="sin_direccion">Sin dirección</string>
+    <string name="error_cargar_mapa">No se pudieron cargar las transacciones del mapa: %1$s</string>
+
+    <!-- ===== Notificaciones ===== -->
+    <string name="canal_nombre">Transacciones</string>
+    <string name="canal_descripcion">Avisos al crear o editar transacciones y mensajes push</string>
+    <string name="notif_titulo_guardada">Transacción guardada</string>
+    <string name="notif_titulo_actualizada">Transacción actualizada</string>
+    <string name="notif_titulo_push_default">MoneyTrack</string>
+</resources>
