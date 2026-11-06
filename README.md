@@ -1,4 +1,4 @@
-# MoneyTrack – Mis Finanzas (Momento 3 )
+# MoneyTrack – Mis Finanzas (Momento 3)
 
 Aplicación Android (Java) para registrar ingresos y gastos personales. Los datos viven en la nube
 (**Firebase Firestore**), cada transacción puede llevar **foto** (Firebase Storage) y **ubicación GPS**,
@@ -27,11 +27,11 @@ se guarda o actualiza un movimiento.
 
 ## Estado actual
 
-El código de subida a **Firebase Storage** está implementado, pero en el proyecto de pruebas el servicio
-todavía no está activado, porque Google lo exige con el plan de pago *Blaze* (cuenta de facturación).
-Mientras tanto, las transacciones se crean y se guardan con su ubicación, pero **sin foto**. Lo mismo
-aplica a la clave de Google Maps (ver paso 3 de la configuración): sin ella la pantalla del mapa se abre,
-pero se ve en blanco.
+Todos los módulos funcionan: autenticación con roles, CRUD en tiempo real, GPS con dirección,
+mapa con pines y notificaciones. El código de subida de fotos a **Firebase Storage** está
+implementado, pero no se pudo activar en la nube porque Google exige el plan de pago *Blaze*
+(cuenta de facturación). Mientras tanto, las transacciones se crean y se guardan con su ubicación,
+pero **sin foto**.
 
 ## Credenciales de prueba
 
@@ -118,16 +118,16 @@ pero se ve en blanco.
 
 1. **Login** con `estandar@moneytrack.com`: la barra superior muestra el rol y el correo; en la lista no aparecen
    los botones de editar/eliminar.
-2. **Crear una transacción**: concedido el permiso de ubicación se muestra la dirección; tomar una **foto**
-   con la cámara (o elegir una de la galería) y guardar → aparece la **notificación** en la barra de estado
-   (tocarla reabre la app).
+2. **Crear una transacción**: concedido el permiso de ubicación se muestra la dirección; guardar →
+   aparece la **notificación** en la barra de estado (tocarla reabre la app). La captura de foto
+   con cámara o galería está implementada, pero la subida a Storage requiere el plan Blaze.
 3. **Lista con Glide**: la tarjeta muestra la miniatura y la dirección. Girar el teléfono para mostrar el
    modo horizontal.
 4. **Mapa** (ícono del mapa en la barra): pin de la transacción, tocarlo para ver la `InfoWindow`,
    usar el zoom y alternar **Satélite**.
 5. **Cerrar sesión** y entrar como `admin@moneytrack.com`: ahora sí se ven editar y eliminar.
-6. **Validación en Firebase Console**: documento en `transacciones` (con `imagenUrl`, `latitud`, `longitud`,
-   `direccion`, `creadoPor`), archivo en Storage `imagenes_transacciones/{id}.jpg` y usuarios en `usuarios`.
+6. **Validación en Firebase Console**: documento en `transacciones` (con `latitud`, `longitud`,
+   `direccion`, `creadoPor`) y usuarios en `usuarios`.
 7. **Push FCM**: Firebase Console → *Messaging → Nueva campaña → Mensaje de notificación de Firebase* →
    *Enviar mensaje de prueba* pegando el token FCM (se imprime en Logcat con la etiqueta `MainActivity` y se
    guarda en `usuarios/{uid}.fcmToken`).
